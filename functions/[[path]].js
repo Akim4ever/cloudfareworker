@@ -1,7 +1,7 @@
 export async function onRequest(context) {
   const modifiedRequest = new Request(context.request, {
     cf: {
-      resolveOverride: 'srv-cdn.solver.net.co'
+      resolveOverride: 'example.com' // тест
     }
   });
   return fetch(modifiedRequest);
